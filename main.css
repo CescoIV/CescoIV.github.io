@@ -6,16 +6,6 @@
 		transform: translateX(0%); 
 	}
 }
-@keyframes colorInverse{
-	0%{
-		color: #000;
-		background-color: #fff;
-	}
-	100%{
-		color: #fff;
-		background-color: #000;
-	}
-}
 
 .me_box{
 	position: absolute;
@@ -107,7 +97,7 @@ a{
 	display: flex;
 	flex-direction: row;
 	margin-top: 10%;
-	animation: 1s ease-in 0s 1 slideLeft;
+	animation: .5s ease-in 0s 1 slideLeft;
 }
 .project_box{
 	width: 200px;
@@ -138,7 +128,7 @@ button:hover{
 }
 /*DISPLAYS*/
 .displays{
-	animation: 1s ease-in 0s 1 slideLeft;
+	animation: .5s ease-in 0s 1 slideLeft;
 	position: absolute;
 	margin-top: 10%;
 	margin-left: 10px;
