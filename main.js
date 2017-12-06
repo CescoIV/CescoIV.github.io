@@ -81,7 +81,9 @@ var projects_html = `
 	</div>
 	`;
 var designs_html = `
+	<h1 class='new'>Designs</h1>
 	<div class='displays'>
+
 		<img class="d_display" src="./images/showcase1.png">
 		<img class="d_display" src="./images/showcase2.png">
 		<img class="d_display" src="./images/showcase3.png">
