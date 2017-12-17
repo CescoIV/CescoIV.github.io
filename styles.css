@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+}
+button{
+	background: none;
+	border: none;
+	height: 5vh;
+	width: 10vh;
+	transition: background .5s ease-in-out;
+}
+button:hover{	
+	background-color: rgba(0,0,0,.3);
+}
+h1,p{
+	margin: 0;
+}
+nav{
+	border: 1px solid black;
+}
+.content{
+	background-color: grey;
+	height: 100vh;
+	transition: 1s opacity;
+}
