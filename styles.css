@@ -28,8 +28,11 @@ nav{
 	background-color: grey;
 	height: 100vh;
 	transition: 1s opacity;
-	animation: rotateIn ease-in 1s;
-	animation-fill-mode: forwards;
+
+}
+.anim{
+	animation: rotateIn ease-in .5s;
+	animation-fill-mode: forwards;	
 }
 
 
@@ -37,8 +40,8 @@ nav{
 @keyframes rotateIn{
 	from{
 		transform-origin: right bottom;
-		transform: rotate3d(0,0,1,45deg);
-		opacity:0;
+		transform: rotate3d(0,0,1,5deg);
+		opacity:.5;
 	}
 	to{
 		transform-origin: right bottom;
