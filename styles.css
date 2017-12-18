@@ -66,14 +66,14 @@ img{
 	border-radius: 20px;
 	width: 350px;
 	height: 200px;
-	transition: .1s ease-in;
+	transition: .2s ease-in-out;
 	display: flex;
 	margin: 20px;
 }
 .project:hover{
 	width: 500px;
 	background: rgba(0,0,0,.4);
-	background-image: url('./images/self.png');
+	background-image: url('./images/demos/pirate-demo.jpg');
 	background-size: cover;
 }
 .project p{
