@@ -6,7 +6,7 @@ button{
 	border: none;
 	height: 5vh;
 	width: 10vh;
-	transition: background .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 button:hover{	
 	background-color: rgba(0,0,0,.3);
@@ -21,6 +21,10 @@ nav{
 	background: #fff;
 	width: 100vw;
 }
+img{
+	width:100px;
+	height: 100px;
+}
 .main{
 	padding-top: 5vh;
 }
@@ -30,9 +34,13 @@ nav{
 	transition: 1s opacity;
 
 }
-.content .inner{
-	padding-top: 50vh;
-	padding-left: 50vw;
+.home .inner{
+	padding-top: 30vh;
+	padding-left: 30vw;
+}
+.projects .inner{
+	padding-top: 20vh;
+	padding-left: 20vw;
 }
 .anim{
 	animation: rotateIn ease-in .5s;
@@ -42,7 +50,52 @@ nav{
 	background-image: url('./images/comp.jpeg');
 	background-size: cover;
 	color: #fff;
-}	
+}
+.me{
+	position: absolute;
+	top: 70vh;
+	right: 50vh;
+}
+.project-box{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.project{
+	background: rgba(0,0,0,.1);
+	border-radius: 20px;
+	width: 350px;
+	height: 200px;
+	transition: .1s ease-in;
+	display: flex;
+	margin: 20px;
+}
+.project:hover{
+	width: 500px;
+	background: rgba(0,0,0,.4);
+	background-image: url('./images/self.png');
+	background-size: cover;
+}
+.project p{
+	display: none;
+}
+.project:hover p{
+	display: inline;
+	color: #fff;
+	flex:1;
+	padding-left: 20px;
+}
+#self{
+	border-radius: 400px;
+	width: 200px;
+	height: 200px;
+	transition: .2s ease-in-out;
+}
+#self:hover{
+	height: 230px;
+	width: 230px;
+
+}
 @keyframes rotateIn{
 	from{
 		transform-origin: right bottom;
@@ -53,5 +106,12 @@ nav{
 		transform-origin: right bottom;
 		transform: none;
 		opacity: 1;
+	}
+}
+@keyframes enlarge{
+	from{
+		width: 200px;
+	}to{
+		width: 250px;
 	}
 }
