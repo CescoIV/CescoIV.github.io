@@ -30,17 +30,23 @@ nav{
 	transition: 1s opacity;
 
 }
+.content .inner{
+	padding-top: 50vh;
+	padding-left: 50vw;
+}
 .anim{
 	animation: rotateIn ease-in .5s;
 	animation-fill-mode: forwards;	
 }
-
-
-@keyframes fadeIn {from {opacity: 0;} to {opacity:1;}}
+.home{
+	background-image: url('./images/comp.jpeg');
+	background-size: cover;
+	color: #fff;
+}	
 @keyframes rotateIn{
 	from{
 		transform-origin: right bottom;
-		transform: rotate3d(0,0,1,5deg);
+		transform: rotate3d(0,0,1,1deg);
 		opacity:.5;
 	}
 	to{
