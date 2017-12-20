@@ -2,7 +2,8 @@
 let home = document.querySelector('.h');
 let projects = document.querySelector('.p');
 let designs = document.querySelector('.d');
-let contact = document.querySelector('.c')
+let skills = document.querySelector('.s');
+let contact = document.querySelector('.c');
 
 //scroll functions
 home.addEventListener('click', (e)=>{
@@ -24,6 +25,13 @@ projects.addEventListener('click', (e)=>{
 designs.addEventListener('click', (e)=>{
 	e.preventDefault();
 	let item = document.querySelector('.designs');
+	item.className = item.className.replace('anim','');
+	item.scrollIntoView();
+	item.className += ' anim';
+})
+skills.addEventListener('click', (e)=>{
+	e.preventDefault();
+	let item = document.querySelector('.skills');
 	item.className = item.className.replace('anim','');
 	item.scrollIntoView();
 	item.className += ' anim';

@@ -116,21 +116,38 @@ img{
 	background-size: cover;
 }
 .showcase{
-	padding-top: 15%;
+	padding-top: 10%;
 	margin-left: 40%;
-	background-color: rgba(0,0,0,.3);
+	/*background-color: rgba(0,0,0,.3);*/
 	width: 400px;
 	height: 400px;
 }
-.showcase button{
+.showcase .buttons{
 	display: block;
+	margin-left: 20%;
+}
+.showcase button{
+	background-color: rgba(0,0,0,.7);
+	transition: ease-in .5s;
+}
+.showcase button:hover{
+	background-color: #000;
+}
+.info{
+	padding-top: 5%;
+	padding-left: 5%;
 }
 #current-gal-display{
-	height: 30%;
-	width: 30%;
+	height: 50%;
+	width: 50%;
+	margin-left: 20%;
 	border-radius: 20px;
 }
-/*----------------*/
+/*Contacts*/
+.contact{
+	background-image: url('./images/contact.jpg');
+	background-size: cover;
+}
 #self{
 	border-radius: 400px;
 	width: 200px;
