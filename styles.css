@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	color: #fff;
+	font-family: Montserrat;
 }
 button{
 	background: none;
@@ -12,6 +13,10 @@ button{
 }
 button:hover{	
 	background-color: rgba(0,0,0,.3);
+}
+h1{
+	padding-left: 5%;
+	padding-top: 5%;
 }
 h1,p{
 	margin: 0;
@@ -112,15 +117,16 @@ img{
 }
 /*design page*/
 .designs{
-	background-image: url('./images/gallery.jpg');
+	color: #000;
+	background-image: url('./images/wolf-bg.jpg');
 	background-size: cover;
 }
 .showcase{
 	padding-top: 10%;
-	margin-left: 40%;
+	margin-left: 20%;
 	/*background-color: rgba(0,0,0,.3);*/
-	width: 400px;
-	height: 400px;
+	width: 700px;
+	height: 700px;
 }
 .showcase .buttons{
 	display: block;
@@ -129,6 +135,7 @@ img{
 .showcase button{
 	background-color: rgba(0,0,0,.7);
 	transition: ease-in .5s;
+	margin-right: 27%;
 }
 .showcase button:hover{
 	background-color: #000;
@@ -143,10 +150,41 @@ img{
 	margin-left: 20%;
 	border-radius: 20px;
 }
+
+/*skills*/
+
+/*.skills h1{
+	padding-top: 10vh;
+	padding-left:5%;
+}*/
+.skill-container{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20vh;
+	padding-left: 25%;
+}
+.skill img{
+	width: 100px;
+	height: 100px;
+}
+.skill{
+	margin: 20px;
+}
 /*Contacts*/
+
 .contact{
-	background-image: url('./images/contact.jpg');
+	background-image: url('./images/telegraph-bg.jpg');
 	background-size: cover;
+	color:#000;
+}
+.contact-info{
+	padding-left: 25%;
+}
+.contact-info p{
+	padding-top: 7%;
+}
+.contact-imgs{
+	padding-top: 5%;
 }
 #self{
 	border-radius: 400px;

@@ -52,15 +52,10 @@ let count = 1;
 let max_images= 6; //change as you add more images
 
 //forward button script
-forward.addEventListener('click', (e)=>{
-	e.preventDefault();
+forward.addEventListener('click', ()=>{
 	count === max_images ? count=1 : count+=1;
 	let img = document.querySelector('#current-gal-display');
-	img.className = '';
 	img.setAttribute('src', `./images/showcase${count}.png`);
-	img.className = 'anim';
-
-
 })
 //back button script
 back.addEventListener('click', ()=>{
