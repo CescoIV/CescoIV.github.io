@@ -1,0 +1,218 @@
+body{
+	margin: 0;
+	color: #fff;
+	font-family: Montserrat;
+}
+button{
+	background: none;
+	color: #fff;
+	border: none;
+	height: 5vh;
+	width: 10vh;
+	transition: .5s ease-in-out;
+}
+button:hover{	
+	background-color: rgba(0,0,0,.3);
+}
+h1{
+	padding-left: 5%;
+	padding-top: 5%;
+}
+h1,p{
+	margin: 0;
+}
+nav{
+	border: 1px solid black;
+	position: fixed;
+	z-index: 1;
+	background: #fff;
+	width: 100vw;
+}
+nav button{
+	color: #000;
+}
+img{
+	width:100px;
+	height: 100px;
+}
+.main{
+	padding-top: 5vh;
+}
+.content{
+	background-color: grey;
+	height: 100vh;
+	transition: 1s opacity;
+
+}
+.home .inner{
+	padding-top: 30vh;
+	padding-left: 30vw;
+}
+.projects .inner{
+	padding-top: 20vh;
+	padding-left: 20vw;
+}
+.anim{
+	animation: rotateIn ease-in .5s;
+	animation-fill-mode: forwards;	
+}
+.home{
+	background-image: url('./images/comp.jpeg');
+	background-size: cover;
+	color: #fff;
+}
+.me{
+	position: absolute;
+	top: 70vh;
+	right: 50vh;
+}
+.projects{
+	background-image: url('./images/project.jpeg');
+	background-size: cover;
+}
+.project-box{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.project{
+	background: rgba(0,0,0,.1);
+	border-radius: 20px;
+	width: 350px;
+	height: 200px;
+	transition: .2s ease-in-out;
+	display: flex;
+	margin: 20px;
+}
+.project:hover{
+	width: 500px;
+	background: rgba(0,0,0,.4);
+	background-image: url('./images/demos/pirate-demo.jpg');
+	background-size: cover;
+}
+.nahuatl:hover{
+	background-image: url('./images/demos/nahuatl-demo.jpg');
+	background-size: cover;
+}
+.travels:hover{
+	background-image: url('./images/demos/travels-demo.jpg');
+	background-size: cover;
+} 
+.dice:hover{
+	background-image: url('./images/demos/food-demo.jpg');
+	background-size: cover;
+} 
+.pirate:hover{
+	background-image: url('./images/demos/pirate-demo.jpg');
+	background-size: cover;	
+}
+.project p{
+	display: none;
+}
+.project:hover p{
+	display: inline;
+	color: #fff;
+	flex:1;
+	padding-left: 20px;
+}
+/*design page*/
+.designs{
+	color: #000;
+	background-image: url('./images/wolf-bg.jpg');
+	background-size: cover;
+}
+.showcase{
+	padding-top: 10%;
+	margin-left: 20%;
+	/*background-color: rgba(0,0,0,.3);*/
+	width: 700px;
+	height: 700px;
+}
+.showcase .buttons{
+	display: block;
+	margin-left: 20%;
+}
+.showcase button{
+	background-color: rgba(0,0,0,.7);
+	transition: ease-in .5s;
+	margin-right: 27%;
+}
+.showcase button:hover{
+	background-color: #000;
+}
+.info{
+	padding-top: 5%;
+	padding-left: 5%;
+}
+#current-gal-display{
+	height: 50%;
+	width: 50%;
+	margin-left: 20%;
+	border-radius: 20px;
+}
+
+/*skills*/
+
+/*.skills h1{
+	padding-top: 10vh;
+	padding-left:5%;
+}*/
+.skill-container{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20vh;
+	padding-left: 25%;
+}
+.skill img{
+	width: 100px;
+	height: 100px;
+}
+.skill{
+	margin: 20px;
+}
+/*Contacts*/
+
+.contact{
+	background-image: url('./images/telegraph-bg.jpg');
+	background-size: cover;
+	color:#000;
+}
+.contact-info{
+	padding-left: 25%;
+}
+.contact-info p{
+	padding-top: 7%;
+}
+.contact-imgs{
+	padding-top: 5%;
+}
+#self{
+	border-radius: 400px;
+	width: 200px;
+	height: 200px;
+	transition: .2s ease-in-out;
+}
+#self:hover{
+	height: 230px;
+	width: 230px;
+
+}
+@keyframes rotateIn{
+	from{
+		transform-origin: right bottom;
+		transform: rotate3d(0,0,1,1deg);
+		opacity:.5;
+	}
+	to{
+		transform-origin: right bottom;
+		transform: none;
+		opacity: 1;
+	}
+}
+@keyframes enlarge{
+	from{
+		width: 200px;
+	}to{
+		width: 250px;
+	}
+}
